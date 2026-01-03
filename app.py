@@ -19,7 +19,7 @@ if st.button("Login"):
         st.error("please enter username")
     elif not password :
         st.error("please enter password")
-    elif username == st.secrets["USERNAME"] and password == st.secrets["PASSWORD"]:
+    elif (username == os.environ.get("USERNAME") and password == os.environ.get("PASSWORD")):
         st.session_state.authenticated = True
         st.success("Login successful ✅")
         st.switch_page("pages/hospital_st.py")

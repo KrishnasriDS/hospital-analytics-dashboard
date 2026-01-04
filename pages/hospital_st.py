@@ -19,7 +19,7 @@ with col2 :
         st.switch_page("app.py")
         
 st.markdown(
-        "<h2 style='text-align: center;'>🏥 Hospital data analysis Dahboard 📊</h2>",
+        "<h2 style='text-align: center;'>🏥 Hospital data analysis Dashboard 📊</h2>",
         unsafe_allow_html=True
 )
 
